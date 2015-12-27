@@ -20,7 +20,7 @@ def is_search_voc(voc, pros, db, app, value):
     #     return [False, cur_big_list]
     if value == '_Collins':
         cur_list = db.get_engine(app, bind='Collins').execute(text('SELECT phonetic, definition FROM '
-                                                                   'vocabulary WHERE lower(voc)="' +
+                                                                   'vocabulary WHERE lower(voc)= "' +
                                                                    voc.lower() + '"' + filter))
         cur_list = list(cur_list)
         if cur_list:
@@ -51,7 +51,7 @@ def change_index(all_voc, all_ex, ex_length):
     for voc, index_list in all_ex.items():
         ex_list = list()
         for index in index_list:
-            ex_list.append(''.join(get_example(all_voc, ex_length, index)))
+            ex_list.append(' '.join(get_example(all_voc, ex_length, index)))
         all_ex[voc] = ex_list
     return all_ex
 
@@ -69,9 +69,9 @@ def _morphy(word, pos):
 def content_handle(content, db, app, value, specific_voc_pos=None):
     all_ex = collections.OrderedDict()
     wanted_voc = dict()
-    cotent = re.sub(u'[^\u0020-\uD7FF\u0009\u000A\u000D\uE000-\uFFFD\u10000-\u10FFFF]+', '', content).decode(
+    content = re.sub(u'[^\u0020-\uD7FF\u0009\u000A\u000D\uE000-\uFFFD\u10000-\u10FFFF]+', '', content).decode(
             'utf8').strip()
-   
+
     sents = sent_detector.tokenize(content)
     max_ex_length = 80
     max_ex_num = 3
@@ -82,7 +82,7 @@ def content_handle(content, db, app, value, specific_voc_pos=None):
         ex = sent.replace('\n', ' ')
         ex_word_len = len(tagged_tokens)
         for word, pros in tagged_tokens:
-            if not re.search('[a-zA-Z]', word):
+            if not re.search('[a-zA-Z]+', word):
                 continue
             count += 1
             if count == 1:
@@ -95,7 +95,7 @@ def content_handle(content, db, app, value, specific_voc_pos=None):
             if re.match('N', pros):
                 mor_voc = _morphy(word_z, 'n')
                 if not mor_voc:
-                    voc = lmtzr.lemmtize(word_z)
+                    voc = lmtzr.lemmatize(word_z)
                 else:
                     if len(mor_voc) > 1:
                         print mor_voc, word_z
@@ -159,14 +159,15 @@ def srt_content_handle(content):
 ###################################################################
 ###################################################################
 # pdfFileObj = open(file_name + '.pdf', 'rb')
-# pdfReader = PyPDF2.pdfFileReader(pdfFileobj)
-# 
+# pdfReader = PyPDF2.PdfFileReader(pdfFileObj)
+#
 # text_list = list()
 # for Page in range(pdfReader.numPages):
 #     text = pdfReader.getPage(Page).extractText()
-#     pritn texttext_list.append(text)
 #     print text
-# content_handle(''.join(text_list), ex_length)
+    # text_list.append(text)
+    #     print text
+# content_handle(' '.join(text_list), ex_length)
 # pdfFileObj.close()
-# 
+#
 ########################### file content ######################

@@ -22,21 +22,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="file_read_output_docx.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="file_read_output_docx.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/file_read_output_docx.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.6660683">
-              <caret line="73" column="2" selection-start-line="73" selection-start-column="2" selection-end-line="73" selection-end-column="2" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="170" column="18" selection-start-line="170" selection-start-column="18" selection-end-line="170" selection-end-column="18" />
               <folding>
-                <marker date="1451230986396" expanded="true" signature="424:494" placeholder="SELECT phone... big_capital" />
-                <marker date="1451230986396" expanded="true" signature="424:505" placeholder="SELECT phone... big_capital" />
-                <marker date="1451230986396" expanded="true" signature="704:835" placeholder="SELECT phone... vocabulary" />
-                <marker date="1451230986396" expanded="true" signature="704:836" placeholder="SELECT phone... vocabulary" />
-                <marker date="1451230986396" expanded="true" signature="704:923" placeholder="SELECT phone... missing_valuevocabulary" />
-                <marker date="1451230986396" expanded="true" signature="704:935" placeholder="SELECT phone... vocabulary" />
-                <marker date="1451230986396" expanded="true" signature="1102:1235" placeholder="SELECT phone... AmericanYouDao" />
-                <marker date="1451230986396" expanded="true" signature="1102:1308" placeholder="SELECT phone... missing_valueAmericanYouDao" />
-                <marker date="1451230986396" expanded="true" signature="1102:1344" placeholder="SELECT phone... missing_valueAmericanYouDao" />
+                <marker date="1451234800613" expanded="true" signature="424:494" placeholder="SELECT phone... big_capital" />
+                <marker date="1451234800613" expanded="true" signature="424:505" placeholder="SELECT phone... big_capital" />
+                <marker date="1451234800613" expanded="true" signature="704:835" placeholder="SELECT phone... vocabulary" />
+                <marker date="1451234800613" expanded="true" signature="704:837" placeholder="SELECT phone... vocabulary" />
+                <marker date="1451234800613" expanded="true" signature="704:924" placeholder="SELECT phone... missing_valuevocabulary" />
+                <marker date="1451234800613" expanded="true" signature="704:936" placeholder="SELECT phone... vocabulary" />
+                <marker date="1451234800613" expanded="true" signature="1103:1236" placeholder="SELECT phone... AmericanYouDao" />
+                <marker date="1451234800613" expanded="true" signature="1103:1309" placeholder="SELECT phone... missing_valueAmericanYouDao" />
+                <marker date="1451234800613" expanded="true" signature="1103:1345" placeholder="SELECT phone... missing_valueAmericanYouDao" />
               </folding>
             </state>
           </provider>
@@ -46,36 +46,32 @@
         <entry file="file://$PROJECT_DIR$/flask_pycharm_practice.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="160" column="12" selection-start-line="160" selection-start-column="12" selection-end-line="160" selection-end-column="12" />
+              <caret line="129" column="0" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
               <folding>
-                <marker date="1451230986462" expanded="true" signature="0:53" placeholder="import ..." />
-                <marker date="1451230986462" expanded="true" signature="1910:2333" placeholder="..." />
-                <marker date="1451230986462" expanded="true" signature="2417:5806" placeholder="..." />
-                <marker date="1451230986462" expanded="true" signature="2671:2711" placeholder="SELECT voc,s... " />
-                <marker date="1451230986462" expanded="true" signature="2671:2805" placeholder="SELECT voc,s... " />
-                <marker date="1451230986462" expanded="true" signature="2671:2806" placeholder="SELECT voc,s... " />
-                <marker date="1451230986462" expanded="true" signature="2671:2815" placeholder="SELECT voc,s... " />
-                <marker date="1451230986462" expanded="true" signature="2961:3005" placeholder="SELECT voc,p... " />
-                <marker date="1451230986462" expanded="true" signature="2961:3006" placeholder="SELECT voc,p... missing_value" />
-                <marker date="1451230986462" expanded="true" signature="2961:3036" placeholder="SELECT voc,p... missing_value" />
-                <marker date="1451230986462" expanded="true" signature="2961:3037" placeholder="SELECT voc,p... missing_value" />
-                <marker date="1451230986462" expanded="true" signature="2961:3052" placeholder="SELECT voc,p... missing_value" />
-                <marker date="1451230986462" expanded="true" signature="2961:3065" placeholder="SELECT voc,p... missing_value" />
-                <marker date="1451230986462" expanded="true" signature="2961:3066" placeholder="SELECT voc,p... missing_value" />
-                <marker date="1451230986462" expanded="true" signature="2961:3079" placeholder="SELECT voc,p... missing_value" />
-                <marker date="1451230986462" expanded="true" signature="2961:5243" placeholder="SELECT voc,p... missing_value" />
-                <marker date="1451230986462" expanded="true" signature="3395:3425" placeholder="UPDATE vocab... " />
-                <marker date="1451230986462" expanded="true" signature="3395:3427" placeholder="UPDATE vocab... " />
-                <marker date="1451230986462" expanded="true" signature="3395:3429" placeholder="UPDATE vocab... " />
-                <marker date="1451230986462" expanded="true" signature="3395:3514" placeholder="UPDATE vocab... " />
-                <marker date="1451230986462" expanded="true" signature="3395:3520" placeholder="UPDATE vocab... " />
-                <marker date="1451230986462" expanded="true" signature="3395:3531" placeholder="UPDATE vocab... " />
-                <marker date="1451230986462" expanded="true" signature="3395:3533" placeholder="UPDATE vocab... " />
-                <marker date="1451230986462" expanded="true" signature="3395:3535" placeholder="UPDATE vocab... " />
-                <marker date="1451230986462" expanded="true" signature="3395:3623" placeholder="UPDATE vocab... " />
-                <marker date="1451230986462" expanded="true" signature="3750:3916" placeholder="UPDATE Ameri... " />
-                <marker date="1451230986462" expanded="true" signature="3750:3960" placeholder="UPDATE Ameri... " />
-                <marker date="1451230986462" expanded="true" signature="5905:6790" placeholder="..." />
+                <marker date="1451234800651" expanded="true" signature="2686:2726" placeholder="SELECT voc,s... " />
+                <marker date="1451234800651" expanded="true" signature="2686:2821" placeholder="SELECT voc,s... " />
+                <marker date="1451234800651" expanded="true" signature="2686:2822" placeholder="SELECT voc,s... " />
+                <marker date="1451234800651" expanded="true" signature="2686:2831" placeholder="SELECT voc,s... " />
+                <marker date="1451234800651" expanded="true" signature="2977:3021" placeholder="SELECT voc,p... " />
+                <marker date="1451234800651" expanded="true" signature="2977:3022" placeholder="SELECT voc,p... missing_value" />
+                <marker date="1451234800651" expanded="true" signature="2977:3052" placeholder="SELECT voc,p... missing_value" />
+                <marker date="1451234800651" expanded="true" signature="2977:3053" placeholder="SELECT voc,p... missing_value" />
+                <marker date="1451234800651" expanded="true" signature="2977:3068" placeholder="SELECT voc,p... missing_value" />
+                <marker date="1451234800651" expanded="true" signature="2977:3081" placeholder="SELECT voc,p... missing_value" />
+                <marker date="1451234800651" expanded="true" signature="2977:3082" placeholder="SELECT voc,p... missing_value" />
+                <marker date="1451234800651" expanded="true" signature="2977:3095" placeholder="SELECT voc,p... missing_value" />
+                <marker date="1451234800651" expanded="true" signature="2977:5091" placeholder="SELECT voc,p... missing_value" />
+                <marker date="1451234800651" expanded="true" signature="3379:3409" placeholder="UPDATE vocab... " />
+                <marker date="1451234800651" expanded="true" signature="3379:3411" placeholder="UPDATE vocab... " />
+                <marker date="1451234800651" expanded="true" signature="3379:3413" placeholder="UPDATE vocab... " />
+                <marker date="1451234800651" expanded="true" signature="3379:3494" placeholder="UPDATE vocab... " />
+                <marker date="1451234800651" expanded="true" signature="3379:3500" placeholder="UPDATE vocab... " />
+                <marker date="1451234800651" expanded="true" signature="3379:3511" placeholder="UPDATE vocab... " />
+                <marker date="1451234800651" expanded="true" signature="3379:3513" placeholder="UPDATE vocab... " />
+                <marker date="1451234800651" expanded="true" signature="3379:3515" placeholder="UPDATE vocab... " />
+                <marker date="1451234800651" expanded="true" signature="3379:3599" placeholder="UPDATE vocab... " />
+                <marker date="1451234800651" expanded="true" signature="3706:3864" placeholder="UPDATE Ameri... " />
+                <marker date="1451234800651" expanded="true" signature="3706:3904" placeholder="UPDATE Ameri... " />
               </folding>
             </state>
           </provider>
@@ -85,11 +81,8 @@
         <entry file="file://$PROJECT_DIR$/mthod_for_use.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="29" column="50" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
-              <folding>
-                <marker date="1451230986419" expanded="true" signature="0:51" placeholder="import ..." />
-                <marker date="1451230986419" expanded="true" signature="279:952" placeholder="..." />
-              </folding>
+              <caret line="29" column="86" selection-start-line="29" selection-start-column="86" selection-end-line="29" selection-end-column="86" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -98,17 +91,19 @@
         <entry file="file://$PROJECT_DIR$/pdf_miner.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
-              <folding />
+              <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/template/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.142857">
-              <caret line="48" column="19" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
+            <state vertical-scroll-proportion="-0.96303505">
+              <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#table#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -122,8 +117,8 @@
       <file leaf-file-name="data.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/template/data.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.0">
-              <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+            <state vertical-scroll-proportion="-3.9285715">
+              <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
               <folding>
                 <element signature="n#style#0;n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -167,14 +162,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/template/book_voc.html" />
+        <option value="$PROJECT_DIR$/static/style.css" />
         <option value="$PROJECT_DIR$/file_read_output_docx.py" />
         <option value="$PROJECT_DIR$/flask_pycharm_practice.py" />
         <option value="$PROJECT_DIR$/mthod_for_use.py" />
         <option value="$PROJECT_DIR$/pdf_miner.py" />
-        <option value="$PROJECT_DIR$/template/index.html" />
         <option value="$PROJECT_DIR$/template/data.html" />
-        <option value="$PROJECT_DIR$/template/book_voc.html" />
-        <option value="$PROJECT_DIR$/static/style.css" />
+        <option value="$PROJECT_DIR$/template/index.html" />
       </list>
     </option>
   </component>
@@ -265,6 +260,11 @@
         <option name="myUseModuleSdk" value="true" />
       </console-settings>
     </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\c2hleo\PycharmProjects" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
@@ -501,10 +501,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1932" height="1066" extended-state="0" />
+    <frame x="-8" y="-8" width="1932" height="1066" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3291714" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -540,85 +540,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/flask_pycharm_practice.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="160" column="12" selection-start-line="160" selection-start-column="12" selection-end-line="160" selection-end-column="12" />
-          <folding>
-            <marker date="1451230986462" expanded="true" signature="0:53" placeholder="import ..." />
-            <marker date="1451230986462" expanded="true" signature="1910:2333" placeholder="..." />
-            <marker date="1451230986462" expanded="true" signature="2417:5806" placeholder="..." />
-            <marker date="1451230986462" expanded="true" signature="2671:2711" placeholder="SELECT voc,s... " />
-            <marker date="1451230986462" expanded="true" signature="2671:2805" placeholder="SELECT voc,s... " />
-            <marker date="1451230986462" expanded="true" signature="2671:2806" placeholder="SELECT voc,s... " />
-            <marker date="1451230986462" expanded="true" signature="2671:2815" placeholder="SELECT voc,s... " />
-            <marker date="1451230986462" expanded="true" signature="2961:3005" placeholder="SELECT voc,p... " />
-            <marker date="1451230986462" expanded="true" signature="2961:3006" placeholder="SELECT voc,p... missing_value" />
-            <marker date="1451230986462" expanded="true" signature="2961:3036" placeholder="SELECT voc,p... missing_value" />
-            <marker date="1451230986462" expanded="true" signature="2961:3037" placeholder="SELECT voc,p... missing_value" />
-            <marker date="1451230986462" expanded="true" signature="2961:3052" placeholder="SELECT voc,p... missing_value" />
-            <marker date="1451230986462" expanded="true" signature="2961:3065" placeholder="SELECT voc,p... missing_value" />
-            <marker date="1451230986462" expanded="true" signature="2961:3066" placeholder="SELECT voc,p... missing_value" />
-            <marker date="1451230986462" expanded="true" signature="2961:3079" placeholder="SELECT voc,p... missing_value" />
-            <marker date="1451230986462" expanded="true" signature="2961:5243" placeholder="SELECT voc,p... missing_value" />
-            <marker date="1451230986462" expanded="true" signature="3395:3425" placeholder="UPDATE vocab... " />
-            <marker date="1451230986462" expanded="true" signature="3395:3427" placeholder="UPDATE vocab... " />
-            <marker date="1451230986462" expanded="true" signature="3395:3429" placeholder="UPDATE vocab... " />
-            <marker date="1451230986462" expanded="true" signature="3395:3514" placeholder="UPDATE vocab... " />
-            <marker date="1451230986462" expanded="true" signature="3395:3520" placeholder="UPDATE vocab... " />
-            <marker date="1451230986462" expanded="true" signature="3395:3531" placeholder="UPDATE vocab... " />
-            <marker date="1451230986462" expanded="true" signature="3395:3533" placeholder="UPDATE vocab... " />
-            <marker date="1451230986462" expanded="true" signature="3395:3535" placeholder="UPDATE vocab... " />
-            <marker date="1451230986462" expanded="true" signature="3395:3623" placeholder="UPDATE vocab... " />
-            <marker date="1451230986462" expanded="true" signature="3750:3916" placeholder="UPDATE Ameri... " />
-            <marker date="1451230986462" expanded="true" signature="3750:3960" placeholder="UPDATE Ameri... " />
-            <marker date="1451230986462" expanded="true" signature="5905:6790" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mthod_for_use.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="50" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
-          <folding>
-            <marker date="1451230986419" expanded="true" signature="0:51" placeholder="import ..." />
-            <marker date="1451230986419" expanded="true" signature="279:952" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pdf_miner.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.142857">
-          <caret line="48" column="19" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#table#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#table#0;n#div#1;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/data.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.0">
-          <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
-          <folding>
-            <element signature="n#style#0;n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template/book_voc.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.0">
@@ -639,18 +560,92 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/file_read_output_docx.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.6660683">
-          <caret line="73" column="2" selection-start-line="73" selection-start-column="2" selection-end-line="73" selection-end-column="2" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="170" column="18" selection-start-line="170" selection-start-column="18" selection-end-line="170" selection-end-column="18" />
           <folding>
-            <marker date="1451230986396" expanded="true" signature="424:494" placeholder="SELECT phone... big_capital" />
-            <marker date="1451230986396" expanded="true" signature="424:505" placeholder="SELECT phone... big_capital" />
-            <marker date="1451230986396" expanded="true" signature="704:835" placeholder="SELECT phone... vocabulary" />
-            <marker date="1451230986396" expanded="true" signature="704:836" placeholder="SELECT phone... vocabulary" />
-            <marker date="1451230986396" expanded="true" signature="704:923" placeholder="SELECT phone... missing_valuevocabulary" />
-            <marker date="1451230986396" expanded="true" signature="704:935" placeholder="SELECT phone... vocabulary" />
-            <marker date="1451230986396" expanded="true" signature="1102:1235" placeholder="SELECT phone... AmericanYouDao" />
-            <marker date="1451230986396" expanded="true" signature="1102:1308" placeholder="SELECT phone... missing_valueAmericanYouDao" />
-            <marker date="1451230986396" expanded="true" signature="1102:1344" placeholder="SELECT phone... missing_valueAmericanYouDao" />
+            <marker date="1451234800613" expanded="true" signature="424:494" placeholder="SELECT phone... big_capital" />
+            <marker date="1451234800613" expanded="true" signature="424:505" placeholder="SELECT phone... big_capital" />
+            <marker date="1451234800613" expanded="true" signature="704:835" placeholder="SELECT phone... vocabulary" />
+            <marker date="1451234800613" expanded="true" signature="704:837" placeholder="SELECT phone... vocabulary" />
+            <marker date="1451234800613" expanded="true" signature="704:924" placeholder="SELECT phone... missing_valuevocabulary" />
+            <marker date="1451234800613" expanded="true" signature="704:936" placeholder="SELECT phone... vocabulary" />
+            <marker date="1451234800613" expanded="true" signature="1103:1236" placeholder="SELECT phone... AmericanYouDao" />
+            <marker date="1451234800613" expanded="true" signature="1103:1309" placeholder="SELECT phone... missing_valueAmericanYouDao" />
+            <marker date="1451234800613" expanded="true" signature="1103:1345" placeholder="SELECT phone... missing_valueAmericanYouDao" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flask_pycharm_practice.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="129" column="0" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
+          <folding>
+            <marker date="1451234800651" expanded="true" signature="2686:2726" placeholder="SELECT voc,s... " />
+            <marker date="1451234800651" expanded="true" signature="2686:2821" placeholder="SELECT voc,s... " />
+            <marker date="1451234800651" expanded="true" signature="2686:2822" placeholder="SELECT voc,s... " />
+            <marker date="1451234800651" expanded="true" signature="2686:2831" placeholder="SELECT voc,s... " />
+            <marker date="1451234800651" expanded="true" signature="2977:3021" placeholder="SELECT voc,p... " />
+            <marker date="1451234800651" expanded="true" signature="2977:3022" placeholder="SELECT voc,p... missing_value" />
+            <marker date="1451234800651" expanded="true" signature="2977:3052" placeholder="SELECT voc,p... missing_value" />
+            <marker date="1451234800651" expanded="true" signature="2977:3053" placeholder="SELECT voc,p... missing_value" />
+            <marker date="1451234800651" expanded="true" signature="2977:3068" placeholder="SELECT voc,p... missing_value" />
+            <marker date="1451234800651" expanded="true" signature="2977:3081" placeholder="SELECT voc,p... missing_value" />
+            <marker date="1451234800651" expanded="true" signature="2977:3082" placeholder="SELECT voc,p... missing_value" />
+            <marker date="1451234800651" expanded="true" signature="2977:3095" placeholder="SELECT voc,p... missing_value" />
+            <marker date="1451234800651" expanded="true" signature="2977:5091" placeholder="SELECT voc,p... missing_value" />
+            <marker date="1451234800651" expanded="true" signature="3379:3409" placeholder="UPDATE vocab... " />
+            <marker date="1451234800651" expanded="true" signature="3379:3411" placeholder="UPDATE vocab... " />
+            <marker date="1451234800651" expanded="true" signature="3379:3413" placeholder="UPDATE vocab... " />
+            <marker date="1451234800651" expanded="true" signature="3379:3494" placeholder="UPDATE vocab... " />
+            <marker date="1451234800651" expanded="true" signature="3379:3500" placeholder="UPDATE vocab... " />
+            <marker date="1451234800651" expanded="true" signature="3379:3511" placeholder="UPDATE vocab... " />
+            <marker date="1451234800651" expanded="true" signature="3379:3513" placeholder="UPDATE vocab... " />
+            <marker date="1451234800651" expanded="true" signature="3379:3515" placeholder="UPDATE vocab... " />
+            <marker date="1451234800651" expanded="true" signature="3379:3599" placeholder="UPDATE vocab... " />
+            <marker date="1451234800651" expanded="true" signature="3706:3864" placeholder="UPDATE Ameri... " />
+            <marker date="1451234800651" expanded="true" signature="3706:3904" placeholder="UPDATE Ameri... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mthod_for_use.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="86" selection-start-line="29" selection-start-column="86" selection-end-line="29" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pdf_miner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/data.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.9285715">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <folding>
+            <element signature="n#style#0;n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.96303505">
+          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#div#1;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

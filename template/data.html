@@ -9,7 +9,7 @@
 </head>
 <body>
 <form action="{{ url_for("voc_database", data=DBdata) }}" method="post">
-    <table border = "1" style="width:100%">
+    <table border="1" style="width:100%">
         {% for index, data in datas %}
             <tr>
                 <td>{{ index + 1 }}</td>

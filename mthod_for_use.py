@@ -27,5 +27,5 @@ def output_html(ind, pros, voc, definition, word_ex_list):
             print(traceback.format_exc())
             print word
             print ex
-    return ind, voc, Markup('<input type="checkbox" name"' + voc + '" value="' + pros + '"></input>'), \
+    return ind, voc, Markup('<input type="checkbox" name="' + voc + '" value="' + pros + '"></input>'), \
            pros, definition, Markup(''.join(ex_list))

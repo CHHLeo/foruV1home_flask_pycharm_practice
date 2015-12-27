@@ -13,7 +13,7 @@
             <tr>
                 <td colspan="3"><h1>BOOKS</h1></td>
             </tr>
-            {% for book in bokks_list %}
+            {% for book in books_list %}
                 <tr>
                     <td>
                         <a href="{{ url_for('book_voc', book=book, value='_Collins') }}">{{ book }}_Collins</a>
