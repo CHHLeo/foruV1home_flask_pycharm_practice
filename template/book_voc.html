@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ book }}</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+<h1>{{ book }}</h1>
+
+<form action="{{ url_for('book_voc', book=book, value=value) }}" method="post">
+    <table border="1" style="width:100%">
+        {% for voc in vocs %}
+            <tr>
+                {% for i in voc %}
+                    <td>{{ i }}</td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </table>
+
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
