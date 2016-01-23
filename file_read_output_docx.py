@@ -10,8 +10,8 @@ import os
 # nltk.download()
 dir_path = os.path.dirname(os.path.realpath(__file__))
 # nltk.data.path.append(dir_path + "\\lib\\nltk_data")
-nltk.data.path.append("C:\Users\Owner\AppData\Roaming\\nltk_data")
-lmtzr = WordNetLemmatizer()
+# nltk.data.path.append("C:\Users\Owner\AppData\Roaming\\nltk_data")
+# lmtzr = WordNetLemmatizer()
 
 
 def is_search_voc(voc, pros, db, app, value):
