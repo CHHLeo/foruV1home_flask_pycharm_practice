@@ -49,7 +49,7 @@ app.config['SQLALCHEMY_BINDS'] = {
 }
 # CollinsSession = scoped_session(sessionmaker(bind=collins_engine))
 
-UPLOAD_FOLDER = dir_path + '\\upload'
+UPLOAD_FOLDER = dir_path + '/upload'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 
@@ -60,8 +60,8 @@ def upload_file():
             if file and method_for_use.allowed_file(file.filename):
                 file.save(os.path.join(app.config['UPLOAD_FOLDER'], file.filename))
         for i in request.form:
-            os.remove(dir_path + '\\upload\\' + i)
-    books_list = listdir(dir_path + '\\upload')
+            os.remove(dir_path + '/upload/' + i)
+    books_list = listdir(dir_path + '/upload')
     return render_template('index.html', books_list=books_list)
 
 
@@ -95,7 +95,7 @@ def update_wanted_dic(remember="1"):
                          voc.lower() + '" AND pos = "' +
                          pos[0] + '"'))
     if remember == '1':
-        for book in listdir(dir_path + '\\upload'):
+        for book in listdir(dir_path + '/upload'):
             for value in ['_Collins']:
                 with open(book + value + '.pk', 'rb') as input:
                     all_ex = pickle.load(input)
@@ -115,8 +115,8 @@ def update_wanted_dic(remember="1"):
         voc_pos_list = list()
         for i in request.form:
             voc_pos_list.append((i, None if request.form[i] == 'on' else request.form[i]))
-        for book in listdir(dir_path + '\\upload'):
-            file_name = dir_path + '\\upload\\' + book
+        for book in listdir(dir_path + '/upload'):
+            file_name = dir_path + '/upload/' + book
             content = pdf_miner.convert(file_name)
             for value in ['_Collins']:
                 with open(book + value + '.pk', 'rb') as input:
@@ -144,7 +144,7 @@ def book_voc(book, value):
             all_ex = pickle.load(input)
             wanted_voc = pickle.load(input)
     except IOError:
-        file_name = dir_path + '\\upload\\' + book
+        file_name = dir_path + '/upload/' + book
         content = pdf_miner.convert(file_name)
         all_ex, wanted_voc = file_read_output_docx.content_handle(content, db, app, value)
         with open(book + value + '.pk', 'wb') as output:
