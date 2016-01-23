@@ -58,8 +58,8 @@ def change_index(all_voc, all_ex, ex_length):
     return all_ex
 
 
-sent_detector = nltk.data.load('tokenizers/punkt/english.pickle')
-tagger = nltk.data.load('taggers/maxent_treebank_pos_tagger/english.pickle')
+# sent_detector = nltk.data.load('tokenizers/punkt/english.pickle')
+# tagger = nltk.data.load('taggers/maxent_treebank_pos_tagger/english.pickle')
 
 
 def _morphy(word, pos):
