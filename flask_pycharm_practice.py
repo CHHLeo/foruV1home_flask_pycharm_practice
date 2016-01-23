@@ -19,8 +19,8 @@ from sqlalchemy.sql import text
 import cPickle as pickle
 
 
-# app = Flask(__name__)
-# db = SQLAlchemy(app)
+app = Flask(__name__)
+db = SQLAlchemy(app)
 # # collins_engine = sqlalchemy.create_engine('sqlite:///db/vocabulary.sqlite3')
 # # coca_engine = sqlalchemy.create_engine('sqlite:///db/AmericanYouDao.sqlite3')
 #
