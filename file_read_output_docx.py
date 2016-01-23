@@ -7,7 +7,8 @@ from nltk.corpus import wordnet as wn
 from sqlalchemy.sql import text
 import os
 
-# nltk.download('all')
+nltk.download('punkt')
+nltk.download('maxent_treebank_pos_tagger')
 dir_path = os.path.dirname(os.path.realpath(__file__))
 # nltk.data.path.append(dir_path + "\\lib\\nltk_data")
 # nltk.data.path.append("C:\Users\Owner\AppData\Roaming\\nltk_data")
