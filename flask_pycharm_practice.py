@@ -18,7 +18,6 @@ from sqlalchemy.orm import sessionmaker, scoped_session
 from sqlalchemy.sql import text
 import cPickle as pickle
 
-
 app = Flask(__name__)
 db = SQLAlchemy(app)
 # collins_engine = sqlalchemy.create_engine('sqlite:///db/vocabulary.sqlite3')
@@ -61,8 +60,14 @@ def upload_file():
                 file.save(os.path.join(app.config['UPLOAD_FOLDER'], file.filename))
         for i in request.form:
             os.remove(dir_path + '/upload/' + i)
+    agent = request.headers.get('User-Agent')
     books_list = listdir(dir_path + '/upload')
-    return render_template('index.html', books_list=books_list)
+    if str(agent).__contains__("iphone"):
+        return render_template('index_test.html', books_list=books_list)
+    else:
+        return render_template('index.html', books_list=books_list)
+
+
 
 
 @app.route('/voc_database/<data>', methods=['POST', 'GET'])
@@ -80,14 +85,15 @@ def voc_database(data):
                 'SELECT voc,pos,rank,Definition,phonetic FROM ' + table + ' WHERE remember = ' + rem + ' AND rank < 20000 ORDER BY rank'))
     return render_template('data.html', DBdata=data, datas=enumerate(list(datas)))
 
+
 def update_wanted_dic(remember="1"):
     for i in request.form:
         voc = i
         pos = request.form[i]
         # print voc, pos
         db.get_engine(app, bind='Collins').execute(text('UPDATE vocabulary SET remember = "' +
-                                                                remember + '" WHERE lower(voc) = "' +
-                                                                voc.lower() + '"'))
+                                                        remember + '" WHERE lower(voc) = "' +
+                                                        voc.lower() + '"'))
         if pos != 'on':
             db.get_engine(app, bind='Coca').execute(
                     text('UPDATE AmericanYouDao SET remember = "' +
@@ -154,9 +160,12 @@ def book_voc(book, value):
     vocs = list()
     for ind, (voc_pros, word_ex_list) in enumerate(all_ex.items()):
         vocs.append(method_for_use.output_html(ind + 1, voc_pros[1], voc_pros[0], ''.join(list(wanted_voc[
-                                                                                                   voc_pros][1][0])), word_ex_list))
+                                                                                                   voc_pros][
+                                                                                                   1][0])),
+                                               word_ex_list))
 
     return render_template('book_voc.html', vocs=vocs, book=book, value=value)
+
 
 # @app.before_first_request
 # def init():
