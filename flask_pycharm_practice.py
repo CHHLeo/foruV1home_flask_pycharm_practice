@@ -62,7 +62,7 @@ def upload_file():
             os.remove(dir_path + '/upload/' + i)
     agent = request.headers.get('User-Agent')
     books_list = listdir(dir_path + '/upload')
-    if str(agent).__contains__("iphone"):
+    if str(agent).lower().__contains__("iphone"):
         return render_template('index_test.html', books_list=books_list)
     else:
         return render_template('index.html', books_list=books_list, agent=agent)
