@@ -98,7 +98,7 @@ def voc_database(data):
                     'SELECT '+ coca_web_selection +' FROM ' + table + ' WHERE remember = ' + rem +
                     ' AND rank < 20000 ORDER BY rank'))
     if isMobile:
-        return render_template('data.html', DBdata=data, datas=enumerate(list(datas)), font=25)
+        return render_template('data.html', DBdata=data, datas=enumerate(list(datas)), font=35)
     else:
         return render_template('data.html', DBdata=data, datas=enumerate(list(datas)), font=16)
 
