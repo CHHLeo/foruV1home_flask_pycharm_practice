@@ -72,21 +72,35 @@ coca_mobile_selection = 'voc,pos,rank,Definition'
 
 @app.route('/voc_database/<data>', methods=['POST', 'GET'])
 def voc_database(data):
+    agent = request.headers.get('User-Agent')
+    isMobile = str(agent).lower().__contains__('iphone')
+
     rem = '1' if data[-1] == 'r' else '0'
     if request.method == 'POST':
         update_wanted_dic(str(int(not int(rem))))
     if re.match('Collins', data):
         table = 'vocabulary'
-        # if str(agent).lower().__contains__("iphone"):
-
-        datas = db.get_engine(app, bind='Collins').execute(text('SELECT '+ collins_web_selection +' FROM '
+        if isMobile:
+            datas = db.get_engine(app, bind='Collins').execute(text('SELECT '+ collins_mobile_selection +' '
+                                                                                                       'FROM '
                                                                 + table + ' WHERE remember = ' + rem))
+        else:
+            datas = db.get_engine(app, bind='Collins').execute(text('SELECT '+ collins_web_selection +' FROM '
+                                                                    + table + ' WHERE remember = ' +  rem))
     elif re.match('Coca', data):
         table = 'AmericanYouDao'
-        datas = db.get_engine(app, bind='Coca').execute(text(
-                'SELECT '+ coca_web_selection +' FROM ' + table + ' WHERE remember = ' + rem +
-                                                  ' AND rank < 20000 ORDER BY rank'))
-    return render_template('data.html', DBdata=data, datas=enumerate(list(datas)))
+        if isMobile:
+            datas = db.get_engine(app, bind='Coca').execute(text(
+                    'SELECT '+ coca_mobile_selection +' FROM ' + table + ' WHERE remember = ' + rem +
+                                                      ' AND rank < 20000 ORDER BY rank'))
+        else:
+            datas = db.get_engine(app, bind='Coca').execute(text(
+                    'SELECT '+ coca_web_selection +' FROM ' + table + ' WHERE remember = ' + rem +
+                    ' AND rank < 20000 ORDER BY rank'))
+    if isMobile:
+        return render_template('data.html', DBdata=data, datas=enumerate(list(datas)), font=25)
+    else:
+        return render_template('data.html', DBdata=data, datas=enumerate(list(datas)), font=16)
 
 
 def update_wanted_dic(remember="1"):
@@ -145,6 +159,8 @@ def update_wanted_dic(remember="1"):
 
 @app.route('/book_voc/<book>?value=<value>', methods=['POST', 'GET'])
 def book_voc(book, value):
+    agent = request.headers.get('User-Agent')
+    isMobile = str(agent).lower().__contains__('iphone')
     if request.method == 'POST':
         update_wanted_dic()
 
@@ -166,9 +182,10 @@ def book_voc(book, value):
                                                                                                    voc_pros][
                                                                                                    1][0])),
                                                word_ex_list))
-
-    return render_template('book_voc.html', vocs=vocs, book=book, value=value)
-
+    if isMobile:
+        return render_template('book_voc.html', vocs=vocs, book=book, value=value, font=25)
+    else:
+        return render_template('book_voc.html', vocs=vocs, book=book, value=value, font=16)
 
 # @app.before_first_request
 # def init():
@@ -176,6 +193,5 @@ def book_voc(book, value):
 #         pass
 
 if __name__ == '__main__':
-    # agent = request.headers.get('User-Agent')
     app.debug = True
     app.run()
