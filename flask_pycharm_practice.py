@@ -60,15 +60,15 @@ def upload_file():
                 file.save(os.path.join(app.config['UPLOAD_FOLDER'], file.filename))
         for i in request.form:
             os.remove(dir_path + '/upload/' + i)
-    agent = request.headers.get('User-Agent')
     books_list = listdir(dir_path + '/upload')
-    if str(agent).lower().__contains__("iphone"):
-        return render_template('index_test.html', books_list=books_list)
-    else:
-        return render_template('index.html', books_list=books_list, agent=agent)
+    return render_template('index.html', books_list=books_list)
 
 
 
+collins_web_selection = 'voc,star,Definition,phonetic'
+collins_mobile_selection = 'voc,star,Definition'
+coca_web_selection = 'voc,pos,rank,Definition,phonetic'
+coca_mobile_selection = 'voc,pos,rank,Definition'
 
 @app.route('/voc_database/<data>', methods=['POST', 'GET'])
 def voc_database(data):
@@ -77,12 +77,15 @@ def voc_database(data):
         update_wanted_dic(str(int(not int(rem))))
     if re.match('Collins', data):
         table = 'vocabulary'
-        datas = db.get_engine(app, bind='Collins').execute(text('SELECT voc,star,Definition,phonetic FROM '
+        # if str(agent).lower().__contains__("iphone"):
+
+        datas = db.get_engine(app, bind='Collins').execute(text('SELECT '+ collins_web_selection +' FROM '
                                                                 + table + ' WHERE remember = ' + rem))
     elif re.match('Coca', data):
         table = 'AmericanYouDao'
         datas = db.get_engine(app, bind='Coca').execute(text(
-                'SELECT voc,pos,rank,Definition,phonetic FROM ' + table + ' WHERE remember = ' + rem + ' AND rank < 20000 ORDER BY rank'))
+                'SELECT '+ coca_web_selection +' FROM ' + table + ' WHERE remember = ' + rem +
+                                                  ' AND rank < 20000 ORDER BY rank'))
     return render_template('data.html', DBdata=data, datas=enumerate(list(datas)))
 
 
@@ -173,5 +176,6 @@ def book_voc(book, value):
 #         pass
 
 if __name__ == '__main__':
+    # agent = request.headers.get('User-Agent')
     app.debug = True
     app.run()
