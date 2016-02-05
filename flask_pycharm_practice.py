@@ -65,7 +65,7 @@ def upload_file():
     if str(agent).__contains__("iphone"):
         return render_template('index_test.html', books_list=books_list)
     else:
-        return render_template('index.html', books_list=books_list)
+        return render_template('index.html', books_list=books_list, agent=agent)
 
 
 
